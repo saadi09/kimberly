@@ -43,6 +43,54 @@
 						</p>
 					</a>
 				</li>
+				<li class="nav-item has-treeview">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fa fa-cog"></i>
+						<p>
+							Items
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?= base_url('items/index')?>" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>List Items</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?= base_url('items/add')?>" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Add Items</p>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="nav-item has-treeview">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fa fa-cog"></i>
+						<p>
+							Inventory
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?= base_url('Inventory/index')?>" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>List Inventory</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?= base_url('Inventory/add')?>" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Add Inventory</p>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
 				<?php  for ($i = 0; $i < count($menu); $i++): ?>
 				<li class="nav-item <?php if (!empty($menu[$i]['child'])) { echo 'has-treeview'; } ?>">
 					<a href="#" class="nav-link">
